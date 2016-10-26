@@ -1,0 +1,69 @@
+[0m[[0minfo[0m] [0m[32mMovieSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mName[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for String[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for Name[0m[0m
+[0m[[0minfo[0m] [0m[32mPrincipal[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for String, Int[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for List[String][0m[0m
+[0m[[0minfo[0m] [0m[32mRating[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for String, Int[0m[0m
+[0m[[0minfo[0m] [0m[31m- should work for PG-13 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.Exception: logic error in Principal: PG-13[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.Rating$.apply(Movie.scala:206)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$6.apply(MovieSpec.scala:67)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$6.apply(MovieSpec.scala:66)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- should work for R *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.NumberFormatException: null[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.lang.Integer.parseInt(Integer.java:542)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.lang.Integer.parseInt(Integer.java:615)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:272)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.immutable.StringOps.toInt(StringOps.scala:29)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.Rating$.apply(Movie.scala:204)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$7.apply(MovieSpec.scala:73)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$7.apply(MovieSpec.scala:72)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mFormat[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for Boolean, String, Double, Int[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for List[String][0m[0m
+[0m[[0minfo[0m] [0m[32mProduction[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for String, Int[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work for List[String][0m[0m
+[0m[[0minfo[0m] [0m[32m- should define isKiwi properly[0m[0m
+[0m[[0minfo[0m] [0m[32mReviews[0m[0m
+[0m[[0minfo[0m] [0m[31m- should work for params *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.Exception: logic error in Principal: PG-13[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.Rating$.apply(Movie.scala:206)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$13.apply(MovieSpec.scala:116)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$13.apply(MovieSpec.scala:115)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpec.withFixture(FlatSpec.scala:1685)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- should work for List[String] *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.Exception: logic error in Principal: PG-13[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.Rating$.apply(Movie.scala:206)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.Reviews$.apply(Movie.scala:166)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$14.apply(MovieSpec.scala:122)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Ingest.MovieSpec$$anonfun$14.apply(MovieSpec.scala:121)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
